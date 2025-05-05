@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  tg-bot:
+    build: .
+    volumes:
+      - .:/code
+      - ./logs:/code/logs
+    shm_size: '2g'
+    restart: always
+
+
+
